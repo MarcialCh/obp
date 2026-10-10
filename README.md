@@ -7,16 +7,12 @@ algorithms, database adapter, dataset loader, experiment runners, reporting
 code, examples, and regression tests. All documentation and source comments
 are in English.
 
-External dependencies are installed separately: Python packages, c2d,
-PostgreSQL with ProvSQL, and the pinned ForBackBench resources. The included
-setup tools download or import those resources. No previous patch archive is
-required. See [third-party dependencies](THIRD_PARTY.md) for sources and terms.
 
 ## 1. Requirements
 
 | Component | Requirement |
 | --- | --- |
-| Full database experiments | Linux, Bash, Python 3.10 or later; Python 3.11 is the validation target |
+| Full database experiments | Python 3.12 |
 | Python packages | Exact direct versions in `requirements.txt` |
 | Query rewriting and data generation | Java 17 or later; `java` on PATH or `JRE` set to its executable |
 | Database | A dedicated PostgreSQL instance with a compatible ProvSQL extension; PostgreSQL 12 was used in the original deployment |

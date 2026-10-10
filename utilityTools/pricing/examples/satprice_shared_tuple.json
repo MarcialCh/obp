@@ -1,0 +1,10 @@
+{
+  "description": "Joint query price is 3, not the sum 2+2=4 of independently cheapest answer supports.",
+  "roots": ["answer1", "answer2"],
+  "nodes": {
+    "x": {"type": "input"}, "a": {"type": "input"}, "b": {"type": "input"},
+    "answer1": {"type": "plus", "children": ["x", "a"]},
+    "answer2": {"type": "plus", "children": ["x", "b"]}
+  },
+  "prices": {"x": "3", "a": "2", "b": "2"}
+}

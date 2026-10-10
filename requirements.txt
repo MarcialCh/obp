@@ -1,0 +1,5 @@
+# Use python-sat, not the unrelated package named pysat.
+python-sat==1.8.dev24
+psycopg2-binary==2.9.10
+sqlparse==0.5.3
+six==1.17.0

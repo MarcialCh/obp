@@ -1,0 +1,112 @@
+{
+  "description": "Paper Example 8, pp.10. Use preserve-cnf for the exact listed positive CNF; optimum 8.",
+  "nodes": {
+    "t1": {
+      "type": "input"
+    },
+    "t2": {
+      "type": "input"
+    },
+    "t3": {
+      "type": "input"
+    },
+    "t4": {
+      "type": "input"
+    },
+    "t5": {
+      "type": "input"
+    },
+    "t6": {
+      "type": "input"
+    },
+    "t7": {
+      "type": "input"
+    },
+    "t8": {
+      "type": "input"
+    },
+    "c1": {
+      "type": "plus",
+      "children": [
+        "t1",
+        "t2"
+      ]
+    },
+    "c2": {
+      "type": "plus",
+      "children": [
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ]
+    },
+    "c3": {
+      "type": "plus",
+      "children": [
+        "t2",
+        "t3",
+        "t5"
+      ]
+    },
+    "c4": {
+      "type": "plus",
+      "children": [
+        "t2",
+        "t4",
+        "t5"
+      ]
+    },
+    "c5": {
+      "type": "plus",
+      "children": [
+        "t3",
+        "t4",
+        "t5"
+      ]
+    },
+    "c6": {
+      "type": "plus",
+      "children": [
+        "t5",
+        "t6",
+        "t7"
+      ]
+    },
+    "c7": {
+      "type": "plus",
+      "children": [
+        "t6",
+        "t7",
+        "t8"
+      ]
+    },
+    "c8": {
+      "type": "plus",
+      "children": [
+        "t7",
+        "t8"
+      ]
+    }
+  },
+  "roots": [
+    "c1",
+    "c2",
+    "c3",
+    "c4",
+    "c5",
+    "c6",
+    "c7",
+    "c8"
+  ],
+  "prices": {
+    "t1": "2",
+    "t2": "3",
+    "t3": "2",
+    "t4": "2",
+    "t5": "7",
+    "t6": "5",
+    "t7": "3",
+    "t8": "4"
+  }
+}

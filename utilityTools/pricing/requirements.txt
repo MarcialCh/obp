@@ -1,0 +1,2 @@
+# Compatibility entry point for the comparison runner's installation hint.
+-r ../../requirements.txt

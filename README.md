@@ -57,10 +57,6 @@ On Windows, install the Windows executable with the same Python tool, set
 The reference Linux binary is 32-bit x86 and needs the corresponding runtime
 loader on the host; alternatively use an appropriate official build.
 
-The example has answers `(x OR a)` and `(x OR b)`, with prices `x=3`, `a=2`,
-and `b=2`. **Every method must return the joint price 3**, buying `x` once.
-`consistency.json` should report `AGREE`. Each run uses a fresh worker process.
-Results are written under `experiments/demo/<batch>/`.
 
 To run a custom immutable provenance JSON:
 
@@ -110,10 +106,6 @@ recreates the database named by `PGDATABASE` for every selected data size.
 It checks for other connections and refuses to forcibly terminate them.
 Setup failures stop the batch even with `CONTINUE_ON_ERROR=1`.
 
-Install ProvSQL for the PostgreSQL server version that will run the experiment.
-[The pinned legacy build instructions](docs/PROVSQL_SETUP.md) are included.
-If a compatible server is already configured, retain it and use the live
-diagnostic command below after loading a dataset.
 
 Create password-free connection files:
 

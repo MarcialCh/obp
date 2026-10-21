@@ -55,8 +55,8 @@ python utilityTools/pricing/pricing_suite.py compare \
 python scripts/fetch_benchmarks.py
 ```
 
-This installs 70 explicitly listed files for `Deep100`, `npd`, `Adolena`,
-`OWL2Bench`, `StockExchange`, and `Vicodi`: source/target schemas, five queries
+This installs explicitly listed files for `Deep100`, `npd`, `Adolena`,
+`OWL2Bench` and `Vicodi`: source/target schemas, five queries
 per scenario, source/target dependencies, GQR, the long-TGD generator, and the
 CSV generator with its configuration.
 

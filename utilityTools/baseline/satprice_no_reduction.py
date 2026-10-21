@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 """SATPrice without reductions, using the complete WPM3 algorithm.
 
-Reference: Ansotegui, Didier and Gabas, IJCAI 2015, Algorithm 1:
-https://www.ijcai.org/Proceedings/15/Papers/046.pdf
-
 WPM3 maintains weighted at-most constraints, splits core weights, and solves
 each merged core's unweighted subproblem exactly. It is implemented here over
 PySAT's SAT oracle; no RC2/MaxSAT solver is called. This pricing specialization

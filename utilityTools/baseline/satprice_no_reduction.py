@@ -1,15 +1,5 @@
 #!/usr/bin/env python3
 """SATPrice without reductions, using the complete WPM3 algorithm.
-
-WPM3 maintains weighted at-most constraints, splits core weights, and solves
-each merged core's unweighted subproblem exactly. It is implemented here over
-PySAT's SAT oracle; no RC2/MaxSAT solver is called. This pricing specialization
-uses the original variable v as the violation indicator of soft clause (-v).
-
-The public pricing interface and audit files are inherited from run_satprice.
-Application-level reduction rules stay disabled. Standard totalizer encodings
-are used instead of the paper's structure-aware sorting-network optimization;
-this is a reimplementation, not the authors' competition solver binary.
 """
 from __future__ import annotations
 

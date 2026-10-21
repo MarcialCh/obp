@@ -1,16 +1,5 @@
 #!/usr/bin/env python3
 """SATPrice: weighted partial MaxSAT with the paper's three reductions.
-
-Source: user-supplied paper, Section IV-B, pp.8-10. Boolean formula is the
-conjunction of ALL answer lineages. Only original tuple variables have prices.
-
-Engineering differences are explicit:
-* PySAT RC2 is the WPMS backend, NOT the cited WPM3 implementation.
-* For a signed Tseitin CNF we require a negative-occurrence safety check for
-  strong dominance; the paper's positive-occurrence test alone is not used
-  blindly on signed clauses. See IMPLEMENTATION_NOTES.md.
-* The no-reduction ablation bypasses this entire preprocessor. It uses exactly
-  the same encoding, WPMS backend and backend options, not an ILP optimizer.
 """
 from __future__ import annotations
 

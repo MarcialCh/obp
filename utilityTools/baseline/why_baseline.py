@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
-"""Baseline based on MINIMAL why-provenance, not a no-reduction SAT solver.
-
-The supplied paper Section V describes [15]'s Baseline but gives no enumeration
-pseudocode. This is an explicit reimplementation of that stated strategy:
-construct inclusion-minimal global supports by antichain union/product, then
-scan their actual purchase costs. Not the original [15] source implementation.
+"""Baseline based on MINIMAL why-provenance.
 """
 from __future__ import annotations
 import time
